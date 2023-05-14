@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Crud-Application</title>
+
+
+</head>
+<style>
+        .container1{
+            max-width: 1100px;
+            font-family: sans-serif;
+            margin: auto;
+            margin-top: 50px;
+            border-radius: 20px;
+            padding: 20px;
+            color: #cacaca;
+          background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);            border: 2px solid black;
+
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        table{
+            width: 100%;
+            border-spacing: 0px;
+        }
+        th{
+            text-align: left;
+        }
+        table td:focus{
+            background-color:  #c6def6;
+        }
+        td:nth-child(3){
+            width: 400px;
+        }
+        td:last-child{
+            text-align: right;
+        }
+        table th,
+        table td{
+            padding: 15px 0px;
+            border-bottom: 1px solid #cacaca;
+            outline: none;
+        }
+
+        
+        .container2{
+          max-width: 520px;
+          margin: auto;
+          margin-top: 50px;
+          padding: 20px;
+          font-family: sans-serif;
+          color: #cacaca;
+          background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
+          border-radius: 20px;
+          border: 2px solid #cbcbcb;
+      }
+      h1{
+          margin-bottom: 30px;
+      }
+      input,
+      textarea{
+          width: calc(100% - 20px);
+          display: block;
+          padding: 6px;
+          font-size: 20px;
+          margin-top: 5px;
+          margin-bottom: 15px;
+          outline: none;
+      }
+      textarea{
+          height: 100px;
+      }
+
+      button{
+        display: inline-block;
+        padding: 15px 24px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-size: 11px;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+      }
+      .container1, button {
+        justify-content: center;
+        text-align: center;
+      }
+      .container2, button {
+        justify-content: center;
+        text-align: center;
+      }
+    </style>
+<body>
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top">Home</a></li>
+                            <li class="scroll-to-section"><a href="#men">Men's</a></li>
+                            <li class="scroll-to-section"><a href="#women">Women's</a></li>
+                            <li class="scroll-to-section"><a href="#kids">Kid's</a></li>
+                            <li class="scroll-to-section"><a href="firebase.html" class="active">Firebase</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Pages</a>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="products.html">Products</a></li>
+                                    <li><a href="single-product.html">Single Product</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:;">Features</a>
+                                <ul>
+                                    <li><a href="#">Features Page 1</a></li>
+                                    <li><a href="#">Features Page 2</a></li>
+                                    <li><a href="#">Features Page 3</a></li>
+                                    <li><a rel="nofollow" href="https://templatemo.com/page/4" target="_blank">Template Page 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#explore">Explore</a></li>
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+</br></br></br>
+    <div class="container1">
+        <h1 class="heading"> <span>Firebase</span> Table </h1>
+        <table>
+            <thead>
+                <tr>
+                    <h2><th>Name</th></h2>
+                    <h2><th>Address</th></h2>
+                    <h2><th>Email</th></h2>
+                    <h2><th>Message</th></h2>
+                    <h2><th style="justify-content: center; text-align: center;">Actions</th></h2>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    </br></br>
+    <div class="container2">
+        <h1 class="heading"> <span>Firebase</span></h1>
+        <div class="form">
+            <label>Name</label>
+            <input type="text" name="Name" id="name">
+            <label>Address</label>
+            <input type="address" name="Address" id="address">
+            <label>Email</label>
+            <input type="email" name="Email" id="email">
+            <label>Message</label>
+            <textarea></textarea>
+            <button style="background-color: rgb(31, 194, 31);">Submit</button>
+        </div>
+    </div>
+
+    
+<!-- add firebase CDN -->
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+<script>
+    const firebaseConfig = {
+        databaseURL: "https://fir-bbf0a-default-rtdb.firebaseio.com/"
+    }
+    firebase.initializeApp(firebaseConfig)
+    // here connection is created with database
+    const database = firebase.database()
+
+    // run function on click submit btn
+    const submit = document.querySelector('button')
+    submit.onclick = () => sendData()
+
+    // create a function to send data
+    function sendData(){
+        var name = document.querySelectorAll('input')[0]
+        var address = document.querySelectorAll('input')[1]
+        var email = document.querySelectorAll('input')[2]
+        var message = document.querySelector('textarea')
+
+        alert("Data Inserted");
+
+ 
+        // set path where data will store
+        var listRef = database.ref('messages/')
+        // but we need firebase generated unique id's to show list data so
+        // push() will generate unique id
+        var newRef = listRef.push()
+        // now set data in db on given path
+        newRef.set({
+            // now send our data
+            'name': name.value,
+            'address': address.value,
+            'email': email.value,
+            'message': message.value
+        })
+    }
+
+
+</script>
+</body>
+
+<body>
+
+<!-- add firebase CDN -->
+
+<script>
+
+const dataContainer = document.querySelector('tbody')
+
+// give complete path to fetch data as given during sending
+var fetchedData = database.ref('messages/')
+fetchedData.on('value', (snapshot) => {
+    var data = snapshot.val()
+    // now set data in table
+    var htmlData = ''
+    for(var key in data){
+        var value = data[key]
+        htmlData += `
+            <tr>
+                <td>${value.name}</td>
+                <td>${value.address}</td>
+                <td>${value.email}</td>
+                <td>${value.message}</td>
+                <td>
+                    <button style="background-color: orange" onclick="readyForUpdate('${key}', this)">Update</button>
+                    <button style="background-color: red" onclick="removeMess('${key}')">Delete</button>
+                </td>
+            </tr>
+        `;
+    }
+    // we use unique id's as reference to delete and update data
+    dataContainer.innerHTML = htmlData
+})
+
+// remove message function
+function removeMess(uniqueId){
+    database.ref('messages/' + uniqueId).remove()
+    // this realtime remove will delete data without any loading
+    // as data is updated, it refetch and rerender in html automatically
+    alert("Data Removed");
+}
+
+// update function 
+function readyForUpdate(uniqueId, elem){
+    // lets ready for update
+    // it will get all the td of the tr in which btn in clicked
+    var siblingTd = elem.parentElement.parentElement.getElementsByTagName('td')
+    // convert first three td to editable
+    for(var i = 0; i < siblingTd.length-1; i++){
+        siblingTd[i].contentEditable = true
+        siblingTd[i].classList.add('temp-update-class')
+    }
+    // also change onclick function
+    elem.setAttribute('onclick', `updateNow('${uniqueId}')`)
+    elem.innerHTML = 'Send'
+}
+
+// create updateNow function
+function updateNow(uniqueId){
+    var contentId = document.querySelectorAll('.temp-update-class')
+    // now create obj using same keys as used during sending
+    var obj = {
+        'name': contentId[0].textContent,
+        'address': contentId[1].textContent,
+        'email': contentId[2].textContent,
+        'message': contentId[3].textContent
+    }
+    // create reference to the data first where data will update
+    // uniqueId will be the id of each message in db
+    var listRef = database.ref('messages/' + uniqueId)
+    // now provide updated data
+    listRef.update(obj)
+    // after update new data will rerender automatically
+    // same as during delete
+    alert("Data Updated");
+}
+
+
+</script>
+</body>
+</html>
